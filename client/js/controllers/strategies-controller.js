@@ -15,4 +15,19 @@ app.controller('strategiesController', ['$scope', '$resource', function ($scope,
 			$scope.strategyPrompt = '';
 		});
 	}
+
+	$scope.deletePrompt = function (idx) {
+		var id = $scope.strategies[idx]._id;
+
+		var Strat = $resource('/api/strategies/'+id, {promptId:'@_id'});
+		Strat.remove();
+
+		$scope.strategies.splice(idx, 1);
+
+	}
 }]);
+
+
+
+
+

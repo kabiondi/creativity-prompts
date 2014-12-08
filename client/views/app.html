@@ -6,6 +6,7 @@
 		<title>Oblique Strategies</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/app.css">
 	</head>
 	<body>
 
@@ -14,7 +15,7 @@
 			<h1>Prompt: {{currentPrompt}}</h1>
 			<ul>
 				<li ng-repeat="strategy in strategies">
-					{{strategy.prompt}}
+					<button class="deleteBtn" ng-click="deletePrompt($index)">Delete</button>{{strategy.prompt}}
 			</ul>
 			<form ng-submit="addPrompt()">
 				<input type="text" placeholder="New Strategy" ng-model="strategyPrompt"></input>

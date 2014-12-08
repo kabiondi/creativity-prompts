@@ -12,3 +12,9 @@ module.exports.list = function (req, res) {
 		res.json(results);
 	});
 }
+
+module.exports.deletePrompt = function (req, res) {
+	var promptId = req.params.prompt_id;
+	Strategy.find({ _id: promptId }).remove().exec();
+}
+
