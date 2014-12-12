@@ -1,8 +1,6 @@
 app.controller('strategiesController', ['$scope', '$resource', function ($scope, $resource) {
 	var Strategy = $resource('/api/strategies');
 
-	console.log('strat control');
-
 	Strategy.query(function (results) {
 		$scope.strategies = results;
 	});
