@@ -1,0 +1,8 @@
+<ul>
+	<li ng-repeat="strategy in strategies">
+		<button class="deleteBtn" ng-click="deletePrompt($index)">Delete</button>{{strategy.prompt}}
+</ul>
+<form ng-submit="addPrompt()">
+	<input type="text" placeholder="New Strategy" ng-model="strategyPrompt"></input>
+	<button type="submit">Add</button>
+</form>
