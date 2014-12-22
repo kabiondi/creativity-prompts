@@ -5,8 +5,6 @@ app.controller('strategiesController', ['$scope', '$resource', function ($scope,
 		$scope.strategies = results;
 	});
 
-	//$scope.strategies = [];
-
 	$scope.addPrompt = function () {
 		var strategy = new Strategy();
 		strategy.prompt = $scope.strategyPrompt;
