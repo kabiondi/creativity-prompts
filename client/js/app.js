@@ -8,7 +8,8 @@ var app = angular.module('creativityPrompts', ['ngRoute', 'ngResource'])
 			})
 			.when('/slideshow', {
 				templateUrl: 'views/slideshow.html',
-				controller: 'slideshowCtrl'
+				controller: 'slideshowCtrl',
+				controllerAs: 'slideshow'
 			})
 		$locationProvider.html5Mode(true);
 }]);
