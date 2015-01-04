@@ -3,7 +3,7 @@ app.controller('slideshowCtrl', ['$scope', '$resource', function ($scope, $resou
 	var idx = 0;
 
 	$scope.changePrompt = function () {
-		var target = document.getElementById('prompt-area');
+		var target = document.getElementById('prompt-target');
 		if (idx >= $scope.slides.length) idx = 0;
 		
 		var currPrompt = $scope.slides[idx].prompt;
@@ -30,5 +30,6 @@ app.controller('slideshowCtrl', ['$scope', '$resource', function ($scope, $resou
 		});
 	}
 	$scope.init();
+
 
 }]);
