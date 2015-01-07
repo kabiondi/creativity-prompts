@@ -6,7 +6,17 @@ ul {
 	margin-right: 10px;
 }
 
+.app-header {
+	background-color: lightblue;
+	height: 75px;
+	top: 0;
+}
+
 #app-title {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 	text-decoration: none;
 	color: black;
 	font-size: 2em;
@@ -14,9 +24,48 @@ ul {
 
 #slideshow-link {
 	display: block;
-	width: 10em;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
 	color: darkgrey;
 	text-decoration: none;
 	font-size: 1.5em;
 }
+
+.ng-pristine {
+	padding-left: 40px;
+}
+
+body {
+	margin: 0;
+}
+
+.view-window { 
+	background-color: lightgrey;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 75px;
+	bottom: 0;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.header.row { height: 75px; top: 0; }
+.body.row { top: 75px; bottom: 50px; }
+.footer.row { height: 50px; bottom: 0; }
+
+span { 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 75px;
+	left: 0;
+	z-index: 1;
+	text-align: center;
+}
+
+
+
+
