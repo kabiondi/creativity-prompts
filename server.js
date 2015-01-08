@@ -28,6 +28,8 @@ app.post('/api/strategies', strategiesController.create);
 
 app.delete('/api/strategies/:prompt_id', strategiesController.deletePrompt);
 
-app.listen(8000, function() {
-	console.log('Hello. Tell me to do something...');
+app.set('port', process.env.PORT || 8000);
+
+app.listen(app.get('port'), function() {
+	console.log('Express server listening on port # ' + app.get('port'));
 });
