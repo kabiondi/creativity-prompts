@@ -28,6 +28,8 @@ app.post('/api/strategies', strategiesController.create);
 
 app.delete('/api/strategies/:prompt_id', strategiesController.deletePrompt);
 
-app.listen(8000, function() {
+var port = process.env.PORT || 8000;
+
+app.listen(port, function() {
 	console.log('Hello. Tell me to do something...');
 });
