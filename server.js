@@ -2,11 +2,15 @@ var express						= require('express');
 var app							= express();
 var bodyParser					= require('body-parser');
 var mongoose					= require('mongoose');
+var uriUtil						= require('mongodb-uri');
 var strategiesController 	= require('./server/controllers/strategies-controller');
 var slideshowCtrl 			= require('./server/controllers/slideshow-controller');
 var morgan						= require('morgan');
 
-mongoose.connect('mongodb://localhost:27017/quote_banks');
+var mongodbUri = 'mongodb://heroku_app33083228:mbptk436ieu8ue0l71ofh6q925@ds031591.mongolab.com:31591/heroku_app33083228';
+var mongooseUri = uriUtil.formatMongoose(mongodbUri);
+//mongoose.connect('mongodb://localhost:27017/quote_banks');
+mongoose.connect(mongooseUri, options);
 
 app.use(bodyParser());
 app.use(morgan('dev'));
