@@ -60,9 +60,8 @@ span {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 75px;
 	left: 0;
-	z-index: 1;
+	top: 0;
 	text-align: center;
 }
 
