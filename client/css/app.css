@@ -36,6 +36,10 @@ ul {
 	padding-left: 40px;
 }
 
+.ng-dirty {
+	padding-left: 40px;
+}
+
 #prompt-target {
 	text-align: center;
 }
