@@ -1,6 +1,7 @@
 {
   "name": "app",
   "version": "0.0.1",
+  "description": "User-defined creativity prompts for tackling writer's block",
   "dependencies": {
     "body-parser": "^1.10.0",
     "express": "^4.10.4",
