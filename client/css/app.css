@@ -6,30 +6,27 @@ ul {
 	margin-right: 10px;
 }
 
+form {
+	padding-bottom: 25px;
+}
+
 .app-header {
-	background-color: lightblue;
-	height: 75px;
+	height: 45px;
 	top: 0;
 }
 
-#app-title {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	font-size: 2em;
-}
-
-#slideshow-link {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
+#edit-link {
 	color: darkgrey;
 	text-decoration: none;
 	font-size: 1.5em;
+	padding-left: 10px;
+}
+
+#slideshow-link {
+	color: black;
+	text-decoration: none;
+	font-size: 1.5em;
+	padding-left: 10px;
 }
 
 .ng-pristine {
@@ -41,7 +38,9 @@ ul {
 }
 
 #prompt-target {
+	position: relative;
 	text-align: center;
+	top: -45px;
 }
 
 body {
@@ -54,8 +53,10 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 75px;
+	top: 0;
 	bottom: 0;
+	overflow-x: auto;
+	overflow-y: auto;
 }
 
 span { 
@@ -81,8 +82,7 @@ span {
 
 .inner {
     margin-left: auto;
-    margin-right: auto; 
-    width: /*whatever width you want*/;
+    margin-right: auto;
 }
 
 
