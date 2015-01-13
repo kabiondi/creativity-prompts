@@ -6,6 +6,30 @@ ul {
 	margin-right: 10px;
 }
 
+.btn-container {
+	text-align: center;
+}
+
+.nav-btn {
+	color: #404040;
+	display: inline-block;
+	margin: 10px;
+	padding: 6px 24px;
+	width: 150px;
+	background-color: lightyellow;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.nav-btn:hover {
+	background-color: yellow;
+}
+
+.nav-btn:active {
+	position:relative;
+	top:1px;
+}
+
 form {
 	padding-bottom: 25px;
 }
