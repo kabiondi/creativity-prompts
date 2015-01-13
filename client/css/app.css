@@ -6,27 +6,51 @@ ul {
 	margin-right: 10px;
 }
 
+.btn-container {
+	text-align: center;
+}
+
+.nav-btn {
+	color: #404040;
+	display: inline-block;
+	margin: 10px;
+	padding: 6px 24px;
+	width: 150px;
+	background-color: lightyellow;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.nav-btn:hover {
+	background-color: yellow;
+}
+
+.nav-btn:active {
+	position:relative;
+	top:1px;
+}
+
 form {
 	padding-bottom: 25px;
 }
 
 .app-header {
-	height: 45px;
+	height: 30px;
 	top: 0;
+	padding-left: 12px;
+	padding-top: 10px;
 }
 
 #edit-link {
 	color: darkgrey;
 	text-decoration: none;
-	font-size: 1.5em;
-	padding-left: 10px;
+	font-size: 1.3em;
 }
 
 #slideshow-link {
 	color: black;
 	text-decoration: none;
 	font-size: 1.5em;
-	padding-left: 10px;
 }
 
 .ng-pristine {
@@ -39,8 +63,14 @@ form {
 
 #prompt-target {
 	position: relative;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	top: -45px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 5vw;
+	color: #404040;
 }
 
 body {
@@ -83,6 +113,7 @@ span {
 .inner {
     margin-left: auto;
     margin-right: auto;
+    max-width: 800px;
 }
 
 
