@@ -6,10 +6,13 @@ var app = angular.module('creativityPrompts', ['ngRoute', 'ngResource'])
 				templateUrl: 'views/edit.html',
 				controller: 'strategiesController'
 			})
+			.when('/edit', {
+				templateUrl: 'views/edit.html',
+				controller: 'strategiesController'
+			})
 			.when('/slideshow', {
 				templateUrl: 'views/slideshow.html',
 				controller: 'slideshowCtrl',
-				controllerAs: 'slideshow'
 			})
 		$locationProvider.html5Mode(true);
 }]);
