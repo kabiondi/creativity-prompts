@@ -1,11 +1,11 @@
 <div class="edit-header">
-	<a href="/slideshow" class="nav-btn">Go To Prompts</a>
+	<a href="/slideshow" class="go-to-prompt-btn">Go To Prompts</a>
 </div>
 
 <div class="edit-modal">
 	<form ng-submit="addPrompt()">
 		<input type="text" placeholder="New Prompt" ng-model="strategyPrompt"></input>
-		<button type="submit" id="add-prompt-btn">Add</button>
+		<button type="submit" id="add-btn">Add</button>
 	</form>
 	<ul>
 		<li ng-repeat="strategy in strategies">
