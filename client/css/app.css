@@ -3,7 +3,36 @@ ul {
 }
 
 .deleteBtn {
-	margin-right: 10px;
+	margin: 5px 10px 0 0;
+	border-radius: 3px;
+	background-color:#e4685d;
+	border:1px solid #e4685d;
+	color:#eee;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:12px;
+	padding:2px 4px;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+.deleteBtn:hover {
+	background-color:#ff675e;
+}
+
+.deleteBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#add-prompt-btn {
+	font-size: 12px;
+	border-radius: 3px;
+	border: solid 1px #404040;
+	padding: 1px 6px;
+	background-color: #66FF99;
+}
+
+#add-prompt-btn:hover {
+	background-color: #33CC00;
 }
 
 .btn-container {
@@ -16,13 +45,16 @@ ul {
 	margin: 10px;
 	padding: 6px 24px;
 	width: 150px;
-	background-color: lightyellow;
+	background-color: lightgrey;
+	border: 1px solid #404040;
 	border-radius: 6px;
+	text-align: center;
 	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 .nav-btn:hover {
-	background-color: yellow;
+	background-color: lightyellow;
 }
 
 .nav-btn:active {
@@ -30,14 +62,17 @@ ul {
 	top:1px;
 }
 
-form {
-	padding-bottom: 25px;
-}
-
 .app-header {
 	height: 30px;
 	top: 0;
 	padding-left: 12px;
+	padding-top: 10px;
+}
+
+.edit-header {
+	height: 65px;
+	top: 0;
+	padding-left: 30px;
 	padding-top: 10px;
 }
 
@@ -51,6 +86,12 @@ form {
 	color: black;
 	text-decoration: none;
 	font-size: 1.5em;
+}
+
+input {
+	border-radius: 3px;
+	border: solid 1px grey;
+	font-size: 13px;
 }
 
 .ng-pristine {
@@ -75,6 +116,11 @@ form {
 
 body {
 	margin: 0;
+}
+
+.edit-modal {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #404040;
 }
 
 .view-window { 
