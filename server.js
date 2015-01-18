@@ -12,13 +12,20 @@ var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000
 
 var mongodbUri = 'mongodb://heroku_app33083228:mbptk436ieu8ue0l71ofh6q925@ds031591.mongolab.com:31591/heroku_app33083228';
 var mongooseUri = uriUtil.formatMongoose(mongodbUri);
-//mongoose.connect('mongodb://localhost:27017/quote_banks');
 mongoose.connect(mongooseUri, options);
 
 app.use(bodyParser());
 app.use(morgan('dev'));
 
 app.get('/', function (req, res) {
+	res.sendFile(__dirname + '/client/views/app.html');
+});
+
+app.get('/slideshow', function (req, res) {
+	res.sendFile(__dirname + '/client/views/app.html');
+});
+
+app.get('/edit', function (req, res) {
 	res.sendFile(__dirname + '/client/views/app.html');
 });
 

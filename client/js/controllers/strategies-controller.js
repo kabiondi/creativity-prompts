@@ -5,6 +5,10 @@ app.controller('strategiesController', ['$scope', '$resource', function ($scope,
 		$scope.strategies = results;
 	});
 
+	// $scope.$route = $route;
+	// $scope.$location = $location;
+	// $scope.$routeParams = $routeParams;
+
 	$scope.addPrompt = function () {
 		var strategy = new Strategy();
 		strategy.prompt = $scope.strategyPrompt;

@@ -8,7 +8,7 @@
 		<button type="submit" id="add-btn">Add</button>
 	</form>
 	<ul>
-		<li ng-repeat="strategy in strategies">
+		<li ng-repeat="strategy in strategies" >
 			<button class="deleteBtn" ng-click="deletePrompt($index)">Delete</button>
 			{{strategy.prompt}}
 			<hr>

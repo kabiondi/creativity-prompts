@@ -4,9 +4,12 @@ ul {
 }
 
 hr {
-	border: 0;
-	border-bottom: 1px dashed #ccc;
-	background: #999;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
 .deleteBtn {
@@ -22,6 +25,7 @@ hr {
 
 .deleteBtn:hover {
 	background-color:#d02222;
+	border:1px solid #d02222;
 }
 
 .deleteBtn:active {
@@ -139,6 +143,7 @@ input {
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-size: 5vw;
 	color: #404040;
+	max-width: 1000px;
 }
 
 body {
@@ -188,7 +193,23 @@ span {
 .inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
 }
 
+.animate.ng-enter,
+.animate.ng-leave {
+	-webkit-transition: 4s linear all;
+	transition: 4s linear all;
+	opacity: 0;
+}
+
+.animate.ng-leave.animate.ng-leave-active,
+.animate.ng-enter.ng-enter-active {
+	opacity: 1;
+}
+
+.animate.ng-enter.ng-enter-active,
+.animate.ng-leave {
+	color: black;
+	font: 100px;
+}
 
