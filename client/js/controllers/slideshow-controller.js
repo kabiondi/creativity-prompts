@@ -2,8 +2,18 @@ app.controller('slideshowCtrl', ['$scope', '$window', '$resource', function ($sc
 	var Prompt = $resource('/api/slideshow');
 	var idx = 0;
 	var counter = 0;
+<<<<<<< HEAD
 
 	$scope.changePrompt = function () {
+=======
+
+
+	$scope.animation = true;
+
+	$scope.changePrompt = function () {
+		
+		
+>>>>>>> b180ad494672d003e525f39eee0acb2f30f1dca9
 		$scope.currPrompt = $scope.slides[idx].prompt;
 		idx++;
 
