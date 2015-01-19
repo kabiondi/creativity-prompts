@@ -1,35 +1,28 @@
 app.controller('slideshowCtrl', ['$scope', '$window', '$resource', function ($scope, $window, $resource) {
 	var Prompt = $resource('/api/slideshow');
 	var idx = 0;
-
-	
-	// var landingURL = "http://" + $window.location.host + "/views/slideshow";
-	// $window.location.href = landingURL;
-
-	// $scope.$route = $route;
-	// $scope.$location = $location;
-	// $scope.$routeParams = $routeParams;
-
-	$scope.animation = true;
+	var counter = 0;
 
 	$scope.changePrompt = function () {
-		// var target = document.getElementById('prompt-target');
-		if (idx >= $scope.slides.length) idx = 0;
-		
 		$scope.currPrompt = $scope.slides[idx].prompt;
-		// target.innerHTML=$scope.currPrompt;
 		idx++;
+
+		if (idx >= $scope.slides.length) idx = 0;
 
 		$scope.templates = [
 			{ url: 'views/template1.html' },
 			{ url: 'views/template2.html' }
 		];
 
-		if ( idx % 2 == 0) {
-			$scope.template = $scope.templates[0];
-		} else
+		// switch template - triggers ngAnimate
+		if (counter % 2 == 0) {
 			$scope.template = $scope.templates[1];
-
+			counter++;
+		}
+		else {
+			$scope.template = $scope.templates[0];
+			counter++;
+		}
 	};
 
 	$scope.init = function () {
@@ -51,6 +44,5 @@ app.controller('slideshowCtrl', ['$scope', '$window', '$resource', function ($sc
 		});
 	}
 	$scope.init();
-
 
 }]);

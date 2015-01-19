@@ -131,10 +131,9 @@ input {
 	font-size: 13px;
 }
 
-
-
 #prompt-target {
 	position: relative;
+	width: 85%;
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -143,7 +142,7 @@ input {
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-size: 5vw;
 	color: #404040;
-	max-width: 1000px;
+	max-width: 900px;
 }
 
 body {
@@ -197,19 +196,21 @@ span {
 
 .animate.ng-enter,
 .animate.ng-leave {
-	-webkit-transition: 4s linear all;
-	transition: 4s linear all;
+	-webkit-transition: 1.5s ease-in all;
+	transition: 1.5s ease-in all;
 	opacity: 0;
 }
 
 .animate.ng-leave.animate.ng-leave-active,
 .animate.ng-enter.ng-enter-active {
+	-webkit-transition: 1.5s ease-in all;
+	transition: 1.5s ease-in all;
 	opacity: 1;
 }
 
 .animate.ng-enter.ng-enter-active,
 .animate.ng-leave {
-	color: black;
+	color: #404040;
 	font: 100px;
 }
 
