@@ -197,19 +197,21 @@ span {
 
 .animate.ng-enter,
 .animate.ng-leave {
-	-webkit-transition: 4s linear all;
-	transition: 4s linear all;
+	-webkit-transition: 1.5s ease-in all;
+	transition: 1.5s ease-in all;
 	opacity: 0;
 }
 
 .animate.ng-leave.animate.ng-leave-active,
 .animate.ng-enter.ng-enter-active {
+	-webkit-transition: 1.5s ease-in all;
+	transition: 1.5s ease-in all;
 	opacity: 1;
 }
 
 .animate.ng-enter.ng-enter-active,
 .animate.ng-leave {
-	color: black;
+	color: #404040;
 	font: 100px;
 }
 
