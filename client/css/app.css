@@ -12,6 +12,14 @@ hr {
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
+input {
+	text-align: center;
+	padding: 2px 30px;
+	border-radius: 3px;
+	border: solid 1px grey;
+	font-size: 13px;
+}
+
 .deleteBtn {
 	margin: 5px 10px 0 0;
 	border-radius: 3px;
@@ -31,6 +39,17 @@ hr {
 .deleteBtn:active {
 	position:relative;
 	top:1px;
+}
+
+@-moz-document url-prefix() {
+	#add-btn {
+		font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+		font-size: 23px;
+		border-radius: 3px;
+		border: solid 1px #404040;
+		padding: 2px 6px;
+		background-color: #66FF99;
+	}
 }
 
 #add-btn {
@@ -96,14 +115,6 @@ hr {
 	top:1px;
 }
 
-.app-header {
-	font-family: Verdana, Geneva, sans-serif;
-	height: 30px;
-	top: 0;
-	padding-left: 12px;
-	padding-top: 10px;
-}
-
 .edit-header {
 	height: 65px;
 	top: 0;
@@ -111,24 +122,28 @@ hr {
 	margin: 0 auto;
 }
 
+.link-container {
+	height: 30px;
+	width: 25%;
+	top: 0;
+	left: 0;
+}
+
 #edit-link {
+	position: absolute;
+	font-family: Verdana, Geneva, sans-serif;
 	color: darkgrey;
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.1em;
+	margin-left: 12px;
+	margin-top: 7px;
+	float: left;
 }
 
 #slideshow-link {
 	color: black;
 	text-decoration: none;
 	font-size: 1.5em;
-}
-
-input {
-	text-align: center;
-	padding: 2px 30px;
-	border-radius: 3px;
-	border: solid 1px grey;
-	font-size: 13px;
 }
 
 #prompt-target {
@@ -140,7 +155,7 @@ input {
 	text-align: center;
 	top: -45px;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 5vw;
+	font-size: 5.5vw;
 	color: #404040;
 	max-width: 900px;
 }
